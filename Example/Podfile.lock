@@ -1,0 +1,16 @@
+PODS:
+  - Legacy (0.1.0)
+
+DEPENDENCIES:
+  - Legacy (from `../`)
+
+EXTERNAL SOURCES:
+  Legacy:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Legacy: 94501d632325e528cf611fe53ae107a38f09f8d1
+
+PODFILE CHECKSUM: 0a9ae0a302ec3b8fc32e2fa4a75b0c4991659812
+
+COCOAPODS: 1.9.3

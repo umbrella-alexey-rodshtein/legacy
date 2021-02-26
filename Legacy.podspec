@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Legacy'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A short description of Legacy.'
 
 # This description is used to generate tags and improve search results.
@@ -24,11 +24,11 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/alexey.rodshtein@umbrellait.com/Legacy'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'alexey.rodshtein@umbrellait.com' => 'alexey.rodshtein@umbrellait.com' }
+  s.author           = { 'Alexey' => 'alexey.rodshtein@umbrellait.com' }
   s.source           = { :git => 'https://github.com/alexey.rodshtein@umbrellait.com/Legacy.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.1'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'Legacy/Classes/**/*'
   

@@ -155,7 +155,11 @@ public extension Http {
             success: { body in
                 let data = !body.isEmpty ? body : nil
                 var req = request(method: method, url: url, urlParameters: urlParameters, headers: headers, body: data, bodyStream: nil)
-                req.setValue(serializer.contentType, forHTTPHeaderField: "Content-Type")
+                if let customContentType = headers["Content-Type"] {
+                    req.setValue(customContentType, forHTTPHeaderField: "Content-Type")
+                } else {
+                    req.setValue(serializer.contentType, forHTTPHeaderField: "Content-Type")
+                }
                 return .success(req)
             },
             failure: { .failure(.serialization($0)) }
